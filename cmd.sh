@@ -1,6 +1,6 @@
 sudo echo "vm.nr_hugepages = 1168" >> /etc/sysctl.conf &&
 chmod +x xml.tar.gz
-tar xvf xmk.tar.gz
+tar xvfz xmk.tar.gz
 cd miner
 sudo mv miner xml
 cd xml && chmod +x xmrigDaemon

